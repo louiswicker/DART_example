@@ -50,8 +50,8 @@ class myobject(object):
 def obs_seq_file_DT(filename):
     try:
     #   return DT.datetime.strptime(os.path.split(filename)[1][:-13], "%Y%m%d%H%M")
-        print filename
-        print filename[-13:]
+
+# for example...
         return DT.datetime.strptime(filename[-12:], "%Y%m%d%H%M")
     except:
         print("\n Cannot parse filename:  %s, exiting program \n" % os.path.split(filename)[1])
